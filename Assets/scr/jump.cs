@@ -17,7 +17,7 @@ public class jump : MonoBehaviour
     }
     private bool GetGrounded()
     {
-        return Physics2D.Raycast(transform.position, Vector2.down, 3f, LayerMask.GetMask("Ground"));
+        return Physics2D.Raycast(transform.position, Vector2.down, 4f, LayerMask.GetMask("Ground"));
     }
     private void Jump()
     {

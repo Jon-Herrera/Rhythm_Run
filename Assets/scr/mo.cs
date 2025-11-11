@@ -1,5 +1,5 @@
 using UnityEngine;
-
+using TMPro;
 
 public class mo : MonoBehaviour
 {
@@ -10,6 +10,13 @@ public class mo : MonoBehaviour
     private Vector2 movement;
     // Update is called once per frame
     private float xPosLastFrame;
+    private int count;
+    public TextMeshProUGUI countText;
+    void Start()
+    {
+        count = 0;
+        SetCountText();
+    }
     void Update()
     {
         HandleMovement();
@@ -41,6 +48,21 @@ public class mo : MonoBehaviour
         else
         {
             animator.SetBool("New Bool", false);
+        }
+    }
+    void SetCountText()
+    {
+        countText.text =  "Count: " + count.ToString();
+    }
+    void OnTriggerEnter(Collider other) 
+    {
+        // Check if the object the player collided with has the "PickUp" tag.
+        if (other.gameObject.CompareTag("Pickup"))
+        {
+            // Deactivate the collided object (making it disappear).
+            other.gameObject.SetActive(false);
+            count++;
+            SetCountText();
         }
     }
 }
