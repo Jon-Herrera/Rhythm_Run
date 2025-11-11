@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
+using NUnit.Framework;
 
 public class mo : MonoBehaviour
 {
@@ -54,7 +56,7 @@ public class mo : MonoBehaviour
     {
         countText.text =  "Count: " + count.ToString();
     }
-    void OnTriggerEnter(Collider other) 
+    void OnTriggerEnter2D(Collider2D other) 
     {
         // Check if the object the player collided with has the "PickUp" tag.
         if (other.gameObject.CompareTag("Pickup"))
@@ -63,6 +65,14 @@ public class mo : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             SetCountText();
+        }
+        if (other.gameObject.CompareTag("Finish"))
+        {
+            SceneManager.LoadScene("Level 2-80s");
+        }
+        if (other.gameObject.CompareTag("finish2"))
+        {
+            SceneManager.LoadScene("Level 3-00s");
         }
     }
 }
