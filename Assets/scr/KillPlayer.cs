@@ -10,6 +10,7 @@ public class KillPlayer : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player.transform.position = respawn.position;
+            //play sound
         }
     }
 

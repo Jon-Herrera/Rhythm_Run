@@ -1,7 +1,5 @@
 using UnityEngine;
-using TMPro;
 using UnityEngine.SceneManagement;
-using NUnit.Framework;
 
 public class mo : MonoBehaviour
 {
@@ -13,7 +11,10 @@ public class mo : MonoBehaviour
     // Update is called once per frame
     private float xPosLastFrame;
     private int count;
-    public TextMeshProUGUI countText;
+    //public TextMeshProUGUI countText;
+    public GameObject projectilePrefab;
+    public Transform launchOffset;
+    public bool forward = true;
     void Start()
     {
         count = 0;
@@ -23,20 +24,26 @@ public class mo : MonoBehaviour
     {
         HandleMovement();
         FlipCharacterX();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            GameObject proj = Instantiate(projectilePrefab, launchOffset.position, transform.rotation);
+            Shoot bullet = proj.GetComponent<Shoot>();
+            bullet.SetDirection(forward);
+        }
     }
-
     private void FlipCharacterX()
     {
         float input = Input.GetAxis("Horizontal");
-        if (input > 0 && transform.position.x > xPosLastFrame)
+        if (input > 0 && !forward)
         {
-            spriteRenderer.flipX = true;
+            Flip();
+            forward = true;
         }
-        else if (input < 0 && transform.position.x < xPosLastFrame)
+        else if (input < 0 && forward)
         {
-            spriteRenderer.flipX = false;
+            Flip();
+            forward = false;
         }
-        xPosLastFrame = transform.position.x;
     }
     private void HandleMovement()
     {
@@ -54,7 +61,7 @@ public class mo : MonoBehaviour
     }
     void SetCountText()
     {
-        countText.text =  "Count: " + count.ToString();
+        //countText.text =  "Count: " + count.ToString();
     }
     void OnTriggerEnter2D(Collider2D other) 
     {
@@ -65,6 +72,7 @@ public class mo : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             SetCountText();
+            //increase bg music volume/ speed
         }
         if (other.gameObject.CompareTag("Finish"))
         {
@@ -74,5 +82,11 @@ public class mo : MonoBehaviour
         {
             SceneManager.LoadScene("Level 3-00s");
         }
+    }
+    void Flip()
+    {
+        Vector3 currentScale = transform.localScale;
+        currentScale.x *= -1; 
+        transform.localScale = currentScale;
     }
 }
