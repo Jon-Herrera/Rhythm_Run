@@ -1215,9 +1215,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   musicSource: {fileID: 179356378}
   SFXSource: {fileID: 122461476}
-  background: {fileID: 8300000, guid: e08042319a4d04d49950ce2b1b162cf0, type: 3}
-  coinCollect: {fileID: 8300000, guid: 5ab8fc664ca4d604f820e255005a664a, type: 3}
-  checkpoint: {fileID: 8300000, guid: c134bf6bd85561b4b938c913b97b57c9, type: 3}
+  background: {fileID: 8300000, guid: 9107e2972ec7147bfab4d02eb61678a1, type: 3}
+  powerUp: {fileID: 0}
+  attack: {fileID: 0}
 --- !u!4 &965632427
 Transform:
   m_ObjectHideFlags: 0

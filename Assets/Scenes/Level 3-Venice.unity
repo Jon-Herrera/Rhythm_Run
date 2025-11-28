@@ -192,7 +192,9 @@ MonoBehaviour:
   speed: 5
   spriteRenderer: {fileID: 552657244}
   animator: {fileID: 552657240}
-  countText: {fileID: 0}
+  projectilePrefab: {fileID: 0}
+  launchOffset: {fileID: 0}
+  forward: 1
 --- !u!70 &552657242
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -726,9 +728,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   musicSource: {fileID: 1648341437}
   SFXSource: {fileID: 1456705841}
-  background: {fileID: 8300000, guid: 159c608256dfe406e890d429d636fa21, type: 3}
-  coinCollect: {fileID: 8300000, guid: 5ab8fc664ca4d604f820e255005a664a, type: 3}
-  checkpoint: {fileID: 8300000, guid: c134bf6bd85561b4b938c913b97b57c9, type: 3}
+  background: {fileID: 8300000, guid: 7e3fe42087a8e4188a5ce2b761dec486, type: 3}
+  powerUp: {fileID: 0}
+  attack: {fileID: 0}
 --- !u!4 &1131442171
 Transform:
   m_ObjectHideFlags: 0
