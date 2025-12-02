@@ -17,6 +17,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 3-Venice.unity
     guid: d176fced09bf9486c9814897313cf685
+  - enabled: 1
+    path: Assets/Scenes/Level 4-Hangzhou.unity
+    guid: e65a3c4978e42481d9a05b5dcb315981
+  - enabled: 1
+    path: Assets/Scenes/Level 5-Seoul.unity
+    guid: fc230cce98db847f4b7538c371d7c33a
+  - enabled: 1
+    path: Assets/Scenes/Level 6-Sydney.unity
+    guid: d12f24b0f83e8490e81c3a27834f3b4d
+  - enabled: 1
+    path: Assets/Scenes/HOMEPAGE.unity
+    guid: ada633bc86050c544997e368d5ed2edd
+  - enabled: 1
+    path: Assets/Scenes/Instructions.unity
+    guid: b16e1fffd07b5794bb588921da5459e4
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
