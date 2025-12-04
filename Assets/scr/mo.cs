@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class mo : MonoBehaviour
 {
+    public AudioSource audioPlayer;
     [SerializeField] private float speed = 5f;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
@@ -72,6 +73,7 @@ public class mo : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             SetCountText();
+            audioPlayer.Play();
             //increase bg music volume/ speed
         }
         if (other.gameObject.CompareTag("Finish"))
@@ -89,4 +91,6 @@ public class mo : MonoBehaviour
         currentScale.x *= -1; 
         transform.localScale = currentScale;
     }
+
+   
 }
