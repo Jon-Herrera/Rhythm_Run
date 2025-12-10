@@ -11,6 +11,7 @@ TagManager:
   - Ground
   - Audio
   - Obstacle
+  - Finish5
   layers:
   - Default
   - TransparentFX

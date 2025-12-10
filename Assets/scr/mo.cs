@@ -93,6 +93,10 @@ public class mo : MonoBehaviour
         {
             SceneManager.LoadScene("Level 3-00s"); 
         }
+        if (other.gameObject.CompareTag("Finish5"))
+        {
+            SceneManager.LoadScene("Level 6-Sydney"); 
+        }
     }
     void Flip()
     {
