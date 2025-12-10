@@ -10,6 +10,7 @@ TagManager:
   - finish2
   - Ground
   - Audio
+  - Obstacle
   layers:
   - Default
   - TransparentFX

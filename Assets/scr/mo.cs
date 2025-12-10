@@ -8,6 +8,7 @@ public class mo : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
 
     [SerializeField] private Animator animator;
+     public AudioManager audioManager;
     private Vector2 movement;
     // Update is called once per frame
     private float xPosLastFrame;
@@ -76,13 +77,21 @@ public class mo : MonoBehaviour
             audioPlayer.Play();
             //increase bg music volume/ speed
         }
+
+        //check if character collides with the spikes (obstacle)
+        if (other.gameObject.CompareTag("Obstacle"))
+        {
+           audioManager.PlayDeathDistort(); //reset the character at the begining of the game and change the pitch
+           Debug.Log("IT WORKS");
+            
+        }
         if (other.gameObject.CompareTag("Finish"))
         {
             SceneManager.LoadScene("Level 2-80s");
         }
         if (other.gameObject.CompareTag("finish2"))
         {
-            SceneManager.LoadScene("Level 3-00s");
+            SceneManager.LoadScene("Level 3-00s"); 
         }
     }
     void Flip()
