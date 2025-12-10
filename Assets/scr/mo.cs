@@ -21,6 +21,7 @@ public class mo : MonoBehaviour
     void Start()
     {
         count = 0;
+        PlayerPrefs.SetInt("CoinCount",0);
         SetCountText();
     }
     void Update()
@@ -74,6 +75,7 @@ public class mo : MonoBehaviour
             // Deactivate the collided object (making it disappear).
             other.gameObject.SetActive(false);
             count++;
+            PlayerPrefs.SetInt("CointCount",count);
             SetCountText();
             audioPlayer.Play();
             //increase bg music volume/ speed
@@ -86,6 +88,8 @@ public class mo : MonoBehaviour
            
             
         }
+
+        
         if (other.gameObject.CompareTag("Portal"))
         {
            //congrats screen
@@ -99,6 +103,10 @@ public class mo : MonoBehaviour
         if (other.gameObject.CompareTag("finish2"))
         {
             SceneManager.LoadScene("Level 3-00s"); 
+        }
+        if (other.gameObject.CompareTag("Finish5"))
+        {
+            SceneManager.LoadScene("Level 6-Sydney"); 
         }
     }
     void Flip()

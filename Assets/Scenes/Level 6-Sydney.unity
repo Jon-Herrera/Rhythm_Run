@@ -189,9 +189,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8158aba5f82843928f9166fb30b58de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  audioPlayer: {fileID: 0}
   speed: 5
   spriteRenderer: {fileID: 552657244}
   animator: {fileID: 552657240}
+  audioManager: {fileID: 0}
   projectilePrefab: {fileID: 0}
   launchOffset: {fileID: 0}
   forward: 1

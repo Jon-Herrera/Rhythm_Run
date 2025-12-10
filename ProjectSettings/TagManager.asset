@@ -12,6 +12,8 @@ TagManager:
   - Audio
   - Obstacle
   - Portal
+  - Finish5
+  - Chain
   layers:
   - Default
   - TransparentFX

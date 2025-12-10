@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 261966427}
   m_Layer: 0
   m_Name: image 1_0
-  m_TagString: finish2
+  m_TagString: Finish5
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
