@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class mo : MonoBehaviour
 {
@@ -82,7 +83,13 @@ public class mo : MonoBehaviour
         if (other.gameObject.CompareTag("Obstacle"))
         {
            audioManager.PlayDeathDistort(); //reset the character at the begining of the game and change the pitch
-           Debug.Log("IT WORKS");
+           
+            
+        }
+        if (other.gameObject.CompareTag("Portal"))
+        {
+           //congrats screen
+           SceneManager.LoadScene("CongratsScene");
             
         }
         if (other.gameObject.CompareTag("Finish"))

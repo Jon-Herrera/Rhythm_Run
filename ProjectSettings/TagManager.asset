@@ -11,6 +11,7 @@ TagManager:
   - Ground
   - Audio
   - Obstacle
+  - Portal
   layers:
   - Default
   - TransparentFX

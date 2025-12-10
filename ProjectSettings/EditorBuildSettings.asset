@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Instructions.unity
     guid: b16e1fffd07b5794bb588921da5459e4
+  - enabled: 1
+    path: Assets/Scenes/CongratsScene.unity
+    guid: b3bad441a27971548937526c014201bb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
