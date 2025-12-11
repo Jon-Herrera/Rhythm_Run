@@ -5177,10 +5177,16 @@ GameObject:
   - component: {fileID: 1962678193}
   - component: {fileID: 1962678192}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - component: {fileID: 1962678194}
   m_Layer: 0
   m_Name: Wood (1)
   m_TagString: Obstacle
+=======
+  m_Layer: 0
+  m_Name: Wood (1)
+  m_TagString: Untagged
+>>>>>>> Stashed changes
 =======
   m_Layer: 0
   m_Name: Wood (1)
@@ -5264,6 +5270,7 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0.63, y: 0.88, z: 0}
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 --- !u!61 &1962678194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5310,6 +5317,8 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.6, y: 1.6}
   m_EdgeRadius: 0
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 --- !u!4 &1991040753 stripped
