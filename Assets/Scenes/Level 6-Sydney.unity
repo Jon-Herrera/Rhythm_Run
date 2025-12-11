@@ -3563,8 +3563,8 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
-    - {fileID: 707331263}
-    - {fileID: 1002433598}
+  - {fileID: 707331263}
+  - {fileID: 933416466}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1067257104
@@ -6024,7 +6024,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0.34571996, y: -0.18473575}
   m_Size: {x: 0.43409562, y: 0.6821693}
   m_Direction: 0
->>>>>>> 08d8b2347ae4dbbd9264aaf15027a4195c171db9
 --- !u!212 &2022790210
 SpriteRenderer:
   m_ObjectHideFlags: 0
