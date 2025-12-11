@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8429561695981922767}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.55, y: -2.7, z: 0}
+  m_LocalPosition: {x: -6.44, y: -2.32, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -171,17 +171,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8158aba5f82843928f9166fb30b58de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  audioPlayer: {fileID: 0}
   speed: 5
   spriteRenderer: {fileID: 1783511300550803282}
   animator: {fileID: 74266815795065583}
-  projectilePrefab: {fileID: 0}
-  launchOffset: {fileID: 0}
-  forward: 1
-  healthBar: {fileID: 0}
-  health: 0.5
-  EnemyDamgeAmount: 0.2
-  respawnPoint: {fileID: 0}
+  countText: {fileID: 0}
 --- !u!95 &74266815795065583
 Animator:
   serializedVersion: 7
