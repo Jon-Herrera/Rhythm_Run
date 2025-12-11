@@ -21,6 +21,8 @@ public class mo : MonoBehaviour
     [SerializeField] private float health=0.5f;
     [SerializeField] private float EnemyDamgeAmount=0.2f;
 
+    [SerializeField] private Transform respawnPoint;
+
     
     void Start()
     {
@@ -102,7 +104,7 @@ public class mo : MonoBehaviour
 
         if(other.gameObject.CompareTag("Enemy"))
         {
-            health -= EnemyDamgeAmount;
+            health-=EnemyDamgeAmount;
             healthBar.SetHealth(health);
 
             if(health <= 0f)
@@ -116,7 +118,6 @@ public class mo : MonoBehaviour
             float knockbackForce = 5;
             rb.AddForce(-knockbackDir * knockbackForce, ForceMode2D.Impulse);
         }
-
         
     }
 
