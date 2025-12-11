@@ -1,8 +1,18 @@
+using System;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
-public class UIFollowMouse : MonoBehaviour
+public class UIFollowMouse : MonoBehaviour, IPointerClickHandler
 {
-   private RectTransform rect;
+
+    public string sceneName;
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+  /* private RectTransform rect;
    [SerializeField]
    private float maxSpeed = 10f;
     // this is used for all 6 game level scenens since I want the mouse to be able to interact with the 
@@ -25,5 +35,7 @@ public class UIFollowMouse : MonoBehaviour
         rect.position = Vector3.MoveTowards(
             rect.position, targetPos,maxSpeed * Time.deltaTime
         );
+   
     }
+    */
 }
