@@ -110,7 +110,7 @@ public class mo : MonoBehaviour
 
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
             Vector2 knockbackDir = new Vector2(transform.position.x - other.transform.position.x, 0).normalized;
-            float knockbackForce = 7;
+            float knockbackForce = 5;
             rb.AddForce(-knockbackDir * knockbackForce, ForceMode2D.Impulse);
         }
 
