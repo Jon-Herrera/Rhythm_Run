@@ -122,6 +122,7 @@ public class mo : MonoBehaviour
     void Die()
     {
         healthBar.SetHealth(1.0f);
+        health=1;
         gameObject.transform.position=respawnPoint.position;
     }
     void Flip()
