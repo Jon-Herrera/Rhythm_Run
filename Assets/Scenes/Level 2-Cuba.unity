@@ -6315,6 +6315,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1244396608}
     - target: {fileID: 5313621782461349142, guid: 94c8b448c309a42e9a9a5f1b0485a171, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1067077212}
+    - target: {fileID: 5313621782461349142, guid: 94c8b448c309a42e9a9a5f1b0485a171, type: 3}
       propertyPath: launchOffset
       value: 
       objectReference: {fileID: 1244396608}
