@@ -14,11 +14,15 @@ public class Shoot : MonoBehaviour
 
     void Update()
     {
-        transform.position += transform.right * Time.deltaTime * speed;
+        transform.position += transform.right * direction * Time.deltaTime * speed;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(collision.gameObject);
+        }
         Destroy(gameObject);
     }
 }
