@@ -21,6 +21,8 @@ public class mo : MonoBehaviour
     [SerializeField] private float health=0.5f;
     [SerializeField] private float EnemyDamgeAmount=0.2f;
 
+    [SerializeField] private Transform respawnPoint;
+
     
     void Start()
     {
@@ -119,7 +121,8 @@ public class mo : MonoBehaviour
 
     void Die()
     {
-        
+        healthBar.SetHealth(1.0f);
+        gameObject.transform.position=respawnPoint.position;
     }
     void Flip()
     {

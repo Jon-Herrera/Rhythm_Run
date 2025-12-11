@@ -2359,6 +2359,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1870666599}
     - target: {fileID: 5313621782461349142, guid: 94c8b448c309a42e9a9a5f1b0485a171, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 570807648}
+    - target: {fileID: 5313621782461349142, guid: 94c8b448c309a42e9a9a5f1b0485a171, type: 3}
       propertyPath: projectilePrefab
       value: 
       objectReference: {fileID: 390427865745237924, guid: 482d83b3425a84e8ca409962d90a3197, type: 3}
@@ -5818,11 +5822,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1497537291581962006, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.93
+      value: 16.91
       objectReference: {fileID: 0}
     - target: {fileID: 1497537291581962006, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.22
+      value: 4.51
       objectReference: {fileID: 0}
     - target: {fileID: 1497537291581962006, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
       propertyPath: m_LocalPosition.z
