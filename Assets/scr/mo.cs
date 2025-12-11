@@ -105,8 +105,11 @@ public class mo : MonoBehaviour
             health -= EnemyDamgeAmount;
             healthBar.SetHealth(health);
 
-            if(health <= 0)
-                Die();
+            if(health <= 0f)
+            {
+              SceneManager.LoadScene("GameOver");
+            }
+                
 
             Rigidbody2D rb = GetComponent<Rigidbody2D>();
             Vector2 knockbackDir = new Vector2(transform.position.x - other.transform.position.x, 0).normalized;
@@ -117,10 +120,7 @@ public class mo : MonoBehaviour
         
     }
 
-    void Die()
-    {
-        
-    }
+   
     void Flip()
     {
         Vector3 currentScale = transform.localScale;
