@@ -4167,6 +4167,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de42809a61c40344f8605891d26f3e51, type: 3}
+--- !u!114 &1602590086 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3103100898053018521, guid: de42809a61c40344f8605891d26f3e51, type: 3}
+  m_PrefabInstance: {fileID: 1602590085}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97e91117b87c78b41a9e51294f849575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthBar
 --- !u!1001 &1680727809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5850,6 +5861,10 @@ PrefabInstance:
       propertyPath: countText
       value: 
       objectReference: {fileID: 688787644}
+    - target: {fileID: 5313621782461349142, guid: 94c8b448c309a42e9a9a5f1b0485a171, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1602590086}
     - target: {fileID: 5313621782461349142, guid: 94c8b448c309a42e9a9a5f1b0485a171, type: 3}
       propertyPath: audioPlayer
       value: 
