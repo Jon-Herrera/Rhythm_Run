@@ -78,7 +78,7 @@ public class mo : MonoBehaviour
         }
         if (other.gameObject.CompareTag("Finish"))
         {
-            SceneManager.LoadScene("Level 2-80s");
+            SceneManager.LoadScene("Level 3-Venice");
         }
         if (other.gameObject.CompareTag("finish2"))
         {
