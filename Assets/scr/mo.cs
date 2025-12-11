@@ -96,13 +96,9 @@ public class mo : MonoBehaviour
             audioPlayer.Play();
             //increase bg music volume/ speed
         }
-        if (other.gameObject.CompareTag("Finish"))
+        if (other.gameObject.CompareTag("Portal"))
         {
-            SceneManager.LoadScene("Level 3-Venice");
-        }
-        if (other.gameObject.CompareTag("finish2"))
-        {
-            SceneManager.LoadScene("Level 3-00s");
+            SceneManager.LoadScene("CongratsScene");
         }
         if (other.gameObject.CompareTag("Portal"))
         {
