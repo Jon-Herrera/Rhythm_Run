@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class mo : MonoBehaviour
 {
@@ -9,7 +8,6 @@ public class mo : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
 
     [SerializeField] private Animator animator;
-     public AudioManager audioManager;
     private Vector2 movement;
     // Update is called once per frame
     private float xPosLastFrame;
@@ -20,15 +18,24 @@ public class mo : MonoBehaviour
     public bool forward = true;
 
     [SerializeField] private HealthBar healthBar;
-    private float health=1.0f;
+    [SerializeField] private float health=0.5f;
     [SerializeField] private float EnemyDamgeAmount=0.2f;
+
+    [SerializeField] private Transform respawnPoint;
 
     
     void Start()
     {
         count = 0;
-        PlayerPrefs.SetInt("CoinCount",0);
         SetCountText();
+        // if(healthBar != null)
+        // {
+        //     healthBar.SetHealth(health);
+        // }
+        // else
+        // {
+        //     Debug.LogWarning("HealthBar not assigned!");
+        // }
     }
     void Update()
     {
@@ -75,59 +82,46 @@ public class mo : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other) 
     {
+        
         // Check if the object the player collided with has the "PickUp" tag.
         if (other.gameObject.CompareTag("Pickup"))
         {
             // Deactivate the collided object (making it disappear).
             other.gameObject.SetActive(false);
             count++;
-            PlayerPrefs.SetInt("CointCount",count);
             SetCountText();
             audioPlayer.Play();
             //increase bg music volume/ speed
         }
-
-        //check if character collides with the spikes (obstacle)
-        if (other.gameObject.CompareTag("Obstacle"))
-        {
-           audioManager.PlayDeathDistort(); //reset the character at the begining of the game and change the pitch
-           
-            
-        }
-
-        
-        if (other.gameObject.CompareTag("Portal"))
-        {
-           //congrats screen
-           SceneManager.LoadScene("CongratsScene");
-            
-        }
         if (other.gameObject.CompareTag("Finish"))
         {
-            SceneManager.LoadScene("Level 2-80s");
+            SceneManager.LoadScene("Level 3-Venice");
         }
         if (other.gameObject.CompareTag("finish2"))
         {
-            SceneManager.LoadScene("Level 3-00s"); 
-        }
-        if (other.gameObject.CompareTag("Finish5"))
-        {
-            SceneManager.LoadScene("Level 6-Sydney"); 
+            SceneManager.LoadScene("Level 3-00s");
         }
 
         if(other.gameObject.CompareTag("Enemy"))
         {
             health-=EnemyDamgeAmount;
             healthBar.SetHealth(health);
-            if(health<=0)
-                Die();
-        }
-    }
 
-    void Die()
-    {
+            if(health <= 0f)
+            {
+              SceneManager.LoadScene("GameOver");
+            }
+                
+
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            Vector2 knockbackDir = new Vector2(transform.position.x - other.transform.position.x, 0).normalized;
+            float knockbackForce = 5;
+            rb.AddForce(-knockbackDir * knockbackForce, ForceMode2D.Impulse);
+        }
         
     }
+
+   
     void Flip()
     {
         Vector3 currentScale = transform.localScale;

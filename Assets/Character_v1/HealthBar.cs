@@ -5,7 +5,6 @@ public class HealthBar : MonoBehaviour
     [SerializeField] private Transform target;
     private Vector2 offset = new Vector2(0, 0);
     [SerializeField] private GameObject fill;
-    [SerializeField] private float health=1;
 
 
     private float initialScaleX;
@@ -14,7 +13,7 @@ public class HealthBar : MonoBehaviour
     {
         initialScaleX = fill.transform.localScale.x;
         offset=gameObject.transform.position-target.position;
-        SetHealth(health);
+        SetHealth(1.0f);
     }
 
     void LateUpdate()

@@ -4,7 +4,7 @@ using UnityEngine;
 public class jump : MonoBehaviour
 {
     [SerializeField] private Rigidbody2D rigid;
-    [SerializeField] private float jumpF = 6f;
+    [SerializeField] private float jumpF = 15f;
 
     // Update is called once per frame
     void Update()
@@ -21,6 +21,6 @@ public class jump : MonoBehaviour
     }
     private void Jump()
     {
-        rigid.AddForce(Vector2.up * jumpF, ForceMode2D.Impulse);
+        rigid.AddForce(Vector2.up * jumpF * 1.1f, ForceMode2D.Impulse);
     }
 }
