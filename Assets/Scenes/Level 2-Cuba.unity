@@ -3770,7 +3770,7 @@ SpriteRenderer:
   m_Size: {x: 38.399998, y: 10.799999}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1581497769
@@ -5176,10 +5176,16 @@ GameObject:
   m_Component:
   - component: {fileID: 1962678193}
   - component: {fileID: 1962678192}
+<<<<<<< Updated upstream
   - component: {fileID: 1962678194}
   m_Layer: 0
   m_Name: Wood (1)
   m_TagString: Obstacle
+=======
+  m_Layer: 0
+  m_Name: Wood (1)
+  m_TagString: Untagged
+>>>>>>> Stashed changes
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5257,6 +5263,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0.63, y: 0.88, z: 0}
+<<<<<<< Updated upstream
 --- !u!61 &1962678194
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5303,6 +5310,8 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.6, y: 1.6}
   m_EdgeRadius: 0
+=======
+>>>>>>> Stashed changes
 --- !u!4 &1991040753 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 226561983813955003, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
