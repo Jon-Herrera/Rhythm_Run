@@ -406,6 +406,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -480,6 +484,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -899,6 +907,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1308,6 +1320,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1726,6 +1742,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1804,6 +1824,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1878,6 +1902,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2198,6 +2226,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2276,6 +2308,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2749,6 +2785,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3210,6 +3250,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3502,6 +3546,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3658,6 +3706,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3881,6 +3933,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4932,6 +4988,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5006,6 +5066,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5221,6 +5285,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5574,6 +5642,10 @@ PrefabInstance:
       propertyPath: respawn
       value: 
       objectReference: {fileID: 570807648}
+    - target: {fileID: 6203886724687229973, guid: e60707e4f13aa46a3bf7c8576770f11e, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1131442170}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -3563,12 +3563,8 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 707331263}
-<<<<<<< HEAD
-  - {fileID: 1002433598}
-=======
-  - {fileID: 933416466}
->>>>>>> 08d8b2347ae4dbbd9264aaf15027a4195c171db9
+    - {fileID: 707331263}
+    - {fileID: 1002433598}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1067257104
@@ -5990,9 +5986,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   speed: 2
-<<<<<<< HEAD
-  patrolDistance: 5
-=======
   patrolDistance: 1
 --- !u!70 &2022790209
 CapsuleCollider2D:

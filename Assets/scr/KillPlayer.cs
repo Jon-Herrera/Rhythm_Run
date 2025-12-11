@@ -1,7 +1,9 @@
 using System;
 using UnityEngine;
 public class KillPlayer : MonoBehaviour
+
 {
+    public AudioManager audioManager;
     public GameObject player;
     public Transform respawn;
 
@@ -11,6 +13,7 @@ public class KillPlayer : MonoBehaviour
         {
             player.transform.position = respawn.position;
             //play sound
+            audioManager.PlayDeathDistort();
         }
     }
 

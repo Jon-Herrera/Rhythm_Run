@@ -726,6 +726,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 1131442170}
   player: {fileID: 552657238}
   respawn: {fileID: 927216363}
 --- !u!114 &309518627
@@ -1537,6 +1538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 1131442170}
   player: {fileID: 552657238}
   respawn: {fileID: 927216363}
 --- !u!61 &504483031
@@ -1766,6 +1768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   audioPlayer: {fileID: 0}
+  audioManager: {fileID: 0}
   speed: 5
   spriteRenderer: {fileID: 552657244}
   animator: {fileID: 552657240}
@@ -1961,6 +1964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 1131442170}
   player: {fileID: 552657238}
   respawn: {fileID: 927216363}
 --- !u!114 &580949108
@@ -3671,6 +3675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 0}
   player: {fileID: 552657238}
   respawn: {fileID: 927216363}
 --- !u!114 &1109834710
@@ -3868,6 +3873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 1131442170}
   player: {fileID: 552657238}
   respawn: {fileID: 927216363}
 --- !u!61 &1112429982
@@ -5440,6 +5446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 1131442170}
   player: {fileID: 552657238}
   respawn: {fileID: 927216363}
 --- !u!114 &1923611813

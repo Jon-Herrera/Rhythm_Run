@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class mo : MonoBehaviour
 {
     public AudioSource audioPlayer;
+    public AudioManager audioManager;
     [SerializeField] private float speed = 5f;
     [SerializeField] private SpriteRenderer spriteRenderer;
 
@@ -118,6 +119,8 @@ public class mo : MonoBehaviour
             float knockbackForce = 5;
             rb.AddForce(-knockbackDir * knockbackForce, ForceMode2D.Impulse);
         }
+
+        
         
     }
 

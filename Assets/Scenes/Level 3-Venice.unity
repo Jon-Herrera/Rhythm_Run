@@ -284,6 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 1131442170}
   player: {fileID: 552657238}
   respawn: {fileID: 934567084}
 --- !u!1 &58955996
@@ -652,6 +653,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 1131442170}
   player: {fileID: 552657238}
   respawn: {fileID: 934567084}
 --- !u!114 &106972762
@@ -974,6 +976,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 1131442170}
   player: {fileID: 552657238}
   respawn: {fileID: 934567084}
 --- !u!114 &203680376
@@ -1168,6 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 0}
   player: {fileID: 552657238}
   respawn: {fileID: 934567084}
 --- !u!114 &227080387
@@ -1957,6 +1961,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   audioPlayer: {fileID: 960073734}
+  audioManager: {fileID: 1131442170}
   speed: 5
   spriteRenderer: {fileID: 552657244}
   animator: {fileID: 552657240}
@@ -1966,6 +1971,7 @@ MonoBehaviour:
   healthBar: {fileID: 222593336}
   health: 0.5
   EnemyDamgeAmount: 0.2
+  respawnPoint: {fileID: 934567084}
 --- !u!70 &552657242
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -3704,6 +3710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 0}
   player: {fileID: 552657238}
   respawn: {fileID: 934567084}
 --- !u!114 &1167981443
@@ -4145,6 +4152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5d2eb2aff66145e383753287678616e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillPlayer
+  audioManager: {fileID: 1131442170}
   player: {fileID: 552657238}
   respawn: {fileID: 934567084}
 --- !u!1 &1247333407
