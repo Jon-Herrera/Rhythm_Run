@@ -83,6 +83,7 @@ public class mo : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other) 
     {
+
         
         // Check if the object the player collided with has the "PickUp" tag.
         if (other.gameObject.CompareTag("Pickup"))
@@ -103,6 +104,13 @@ public class mo : MonoBehaviour
         {
             SceneManager.LoadScene("Level 3-00s");
         }
+        if (other.gameObject.CompareTag("Portal"))
+        {
+            PlayerPrefs.SetInt("CointCount", count);
+            PlayerPrefs.Save();
+            SceneManager.LoadScene("CongratsScene");
+        }
+        
 
         if(other.gameObject.CompareTag("Enemy"))
         {
