@@ -12,7 +12,6 @@ public class KillPlayer : MonoBehaviour
             player.transform.position = respawn.position;
             //play sound
         }
-        
     }
 
 

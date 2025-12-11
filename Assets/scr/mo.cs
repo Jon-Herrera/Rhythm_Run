@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro;
 
 public class mo : MonoBehaviour
 {
@@ -9,7 +8,6 @@ public class mo : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
 
     [SerializeField] private Animator animator;
-     public AudioManager audioManager;
     private Vector2 movement;
     // Update is called once per frame
     private float xPosLastFrame;
@@ -21,7 +19,6 @@ public class mo : MonoBehaviour
     void Start()
     {
         count = 0;
-        PlayerPrefs.SetInt("CoinCount",0);
         SetCountText();
     }
     void Update()
@@ -75,38 +72,17 @@ public class mo : MonoBehaviour
             // Deactivate the collided object (making it disappear).
             other.gameObject.SetActive(false);
             count++;
-            PlayerPrefs.SetInt("CointCount",count);
             SetCountText();
             audioPlayer.Play();
             //increase bg music volume/ speed
         }
-
-        //check if character collides with the spikes (obstacle)
-        if (other.gameObject.CompareTag("Obstacle"))
-        {
-           audioManager.PlayDeathDistort(); //reset the character at the begining of the game and change the pitch
-           
-            
-        }
-
-        
-        if (other.gameObject.CompareTag("Portal"))
-        {
-           //congrats screen
-           SceneManager.LoadScene("CongratsScene");
-            
-        }
         if (other.gameObject.CompareTag("Finish"))
         {
-            SceneManager.LoadScene("Level 2-80s");
+            SceneManager.LoadScene("Level 3-Venice");
         }
         if (other.gameObject.CompareTag("finish2"))
         {
-            SceneManager.LoadScene("Level 3-00s"); 
-        }
-        if (other.gameObject.CompareTag("Finish5"))
-        {
-            SceneManager.LoadScene("Level 6-Sydney"); 
+            SceneManager.LoadScene("Level 3-00s");
         }
     }
     void Flip()
