@@ -18,6 +18,12 @@ public class mo : MonoBehaviour
     public GameObject projectilePrefab;
     public Transform launchOffset;
     public bool forward = true;
+
+    [SerializeField] private HealthBar healthBar;
+    private float health=1.0f;
+    [SerializeField] private float EnemyDamgeAmount=0.2f;
+
+    
     void Start()
     {
         count = 0;
@@ -108,6 +114,19 @@ public class mo : MonoBehaviour
         {
             SceneManager.LoadScene("Level 6-Sydney"); 
         }
+
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            health-=EnemyDamgeAmount;
+            healthBar.SetHealth(health);
+            if(health<=0)
+                Die();
+        }
+    }
+
+    void Die()
+    {
+        
     }
     void Flip()
     {
