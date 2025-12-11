@@ -298,7 +298,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManageScene
   sceneToLoad: Level 2-Cuba
-  buttons: []
 --- !u!1 &133150455
 GameObject:
   m_ObjectHideFlags: 0
@@ -478,7 +477,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManageScene
   sceneToLoad: Level 6-Sydney
-  buttons: []
 --- !u!1 &263915075
 GameObject:
   m_ObjectHideFlags: 0
@@ -606,7 +604,6 @@ GameObject:
   m_Component:
   - component: {fileID: 398906639}
   - component: {fileID: 398906638}
-  - component: {fileID: 398906641}
   - component: {fileID: 398906640}
   - component: {fileID: 398906642}
   - component: {fileID: 398906643}
@@ -736,19 +733,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.83, y: 1.7}
   m_EdgeRadius: 0
---- !u!114 &398906641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 398906637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a9320311ee8a7546a8223f32fab4718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HoverEnlarger
-  sizeDifference: 1.05
 --- !u!114 &398906642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -775,7 +759,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManageScene
   sceneToLoad: Level 4-Hangzhou
-  buttons: []
 --- !u!1 &615079738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1603,7 +1586,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManageScene
   sceneToLoad: Instructions
-  buttons: []
 --- !u!1 &1819859540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1665,7 +1647,6 @@ GameObject:
   - component: {fileID: 1921012504}
   - component: {fileID: 1921012503}
   - component: {fileID: 1921012506}
-  - component: {fileID: 1921012505}
   - component: {fileID: 1921012507}
   - component: {fileID: 1921012508}
   m_Layer: 0
@@ -1748,19 +1729,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1921012505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921012502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a9320311ee8a7546a8223f32fab4718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HoverEnlarger
-  sizeDifference: 1.05
 --- !u!61 &1921012506
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1833,7 +1801,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManageScene
   sceneToLoad: Level 5-Seoul
-  buttons: []
 --- !u!1 &1924880696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2012,13 +1979,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManageScene
   sceneToLoad: Level 1-NYC
-  buttons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &2020731744
 GameObject:
   m_ObjectHideFlags: 0
@@ -2029,7 +1989,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2020731746}
   - component: {fileID: 2020731745}
-  - component: {fileID: 2020731748}
   - component: {fileID: 2020731747}
   - component: {fileID: 2020731749}
   - component: {fileID: 2020731750}
@@ -2159,19 +2118,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.83, y: 1.7}
   m_EdgeRadius: 0
---- !u!114 &2020731748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2020731744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a9320311ee8a7546a8223f32fab4718, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HoverEnlarger
-  sizeDifference: 1.05
 --- !u!114 &2020731749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2198,7 +2144,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManageScene
   sceneToLoad: Level 3-Venice
-  buttons: []
 --- !u!1 &2057702775
 GameObject:
   m_ObjectHideFlags: 0
@@ -2434,13 +2379,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ManageScene
   sceneToLoad: HOMEPAGE
-  buttons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &2101507092
 MonoBehaviour:
   m_ObjectHideFlags: 0
