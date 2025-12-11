@@ -18,7 +18,7 @@ public class mo : MonoBehaviour
     public bool forward = true;
 
     [SerializeField] private HealthBar healthBar;
-    private float health=1.0f;
+    [SerializeField] private float health=0.5f;
     [SerializeField] private float EnemyDamgeAmount=0.2f;
 
     
@@ -26,6 +26,14 @@ public class mo : MonoBehaviour
     {
         count = 0;
         SetCountText();
+        // if(healthBar != null)
+        // {
+        //     healthBar.SetHealth(health);
+        // }
+        // else
+        // {
+        //     Debug.LogWarning("HealthBar not assigned!");
+        // }
     }
     void Update()
     {
@@ -72,6 +80,7 @@ public class mo : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other) 
     {
+        
         // Check if the object the player collided with has the "PickUp" tag.
         if (other.gameObject.CompareTag("Pickup"))
         {
@@ -98,6 +107,7 @@ public class mo : MonoBehaviour
             if(health<=0)
                 Die();
         }
+        
     }
 
     void Die()
