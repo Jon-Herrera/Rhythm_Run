@@ -90,6 +90,7 @@ public class mo : MonoBehaviour
             other.gameObject.SetActive(false);
             count++;
             SetCountText();
+            audioPlayer.pitch = UnityEngine.Random.Range(1f, 1.5f);
             audioPlayer.Play();
             //increase bg music volume/ speed
         }
@@ -118,8 +119,9 @@ public class mo : MonoBehaviour
             float knockbackForce = 5;
             rb.AddForce(-knockbackDir * knockbackForce, ForceMode2D.Impulse);
         }
+
         
-    }
+}
 
    
     void Flip()
