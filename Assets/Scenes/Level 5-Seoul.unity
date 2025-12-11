@@ -5883,11 +5883,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1497537291581962006, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.73
+      value: -10.93
       objectReference: {fileID: 0}
     - target: {fileID: 1497537291581962006, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.96
+      value: -0.22
       objectReference: {fileID: 0}
     - target: {fileID: 1497537291581962006, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5925,12 +5925,24 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Enemy '
       objectReference: {fileID: 0}
-    - target: {fileID: 3075737494028298416, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
+    - target: {fileID: 2359027197174825101, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
       propertyPath: m_Size.x
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 2359027197174825101, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075737494028298416, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
+      propertyPath: m_Size.x
+      value: 0.45
+      objectReference: {fileID: 0}
     - target: {fileID: 3075737494028298416, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3075737494028298416, guid: 4ce64dd80baed404e9213eeee1fb7457, type: 3}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

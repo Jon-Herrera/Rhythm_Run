@@ -102,11 +102,18 @@ public class mo : MonoBehaviour
 
         if(other.gameObject.CompareTag("Enemy"))
         {
-            health-=EnemyDamgeAmount;
+            health -= EnemyDamgeAmount;
             healthBar.SetHealth(health);
-            if(health<=0)
+
+            if(health <= 0)
                 Die();
+
+            Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            Vector2 knockbackDir = new Vector2(transform.position.x - other.transform.position.x, 0).normalized;
+            float knockbackForce = 7;
+            rb.AddForce(-knockbackDir * knockbackForce, ForceMode2D.Impulse);
         }
+
         
     }
 
